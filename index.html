@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Virtual Tour</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+    <script src="js/Tour.js"></script>
+  </head>
+  <body>
+    <a-scene id="main-scene">
+      <a-sky id="main-container" radius="5000" color="grey"></a-sky>
+      <a-entity id="places-container" tour></a-entity>
+      <a-camera id="camera">
+        <a-entity id="app-title" position="0 0.7 -1" text="font:exo2bold;align:center;width:2;color:brown; value:Virtual Comic Store"></a-entity>
+        <a-entity id="app-subtitle" position="0 0.6 -1" text="font:dejavu;align:center;width:1;color:brown; value:Read your favourite comic for free!"></a-entity>
+
+      </a-camera>
+      
+
+    </a-scene>
+   
+  </body>
+</html>
